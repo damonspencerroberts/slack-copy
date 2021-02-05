@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slack prototype</title>
+  <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Fontawesome CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- TODO: Slack copycat markup -->
+  <div class="containers">
+    <div class="parent">
+      <div class="sidebar">
+        <div class="sidebar-users">
+          <h2>LW</h2>
+        </div>
+        <div class="sidebar-users">
+          <h2>SL</h2>
+        </div>
+        <div class="sidebar-users sidebar-users-active">
+          <h2>DR</h2>
+        </div>
+      </div>
+      <div class="channels">
+        <div class="main-channel">
+          <h1>Le Wagon</h1>
+          <p>
+            <i class="fas fa-circle fa-xs icon-green"></i> rober2ds
+          </p>
+        </div>
+        <div class="other-channels">
+          <div class="other-channels-top">
+            <h3>Channels</h3>
+            <i class="fa fa-plus"></i>
+          </div>
+          <div class="each-channel">
+            <i class="fab fa-slack-hash channel-right-margin"></i>
+            <p>general</p>
+          </div>
+          <div class="each-channel">
+            <i class="fab fa-slack-hash channel-right-margin"></i>
+            <p>help</p>
+          </div>
+          <div class="each-channel active-channel">
+            <i class="fab fa-slack-hash channel-right-margin"></i>
+            <p>design</p>
+          </div>
+          <div class="each-channel">
+            <i class="fa fa-lock fa-xs channel-right-margin"></i>
+            <p>friday-drinks</p>
+          </div>
+          <div class="each-channel">
+            <i class="fa fa-lock fa-xs channel-right-margin"></i>
+            <p>climbing</p>
+          </div>
+        </div>
+
+        <div class="other-channels">
+          <div class="other-channels-top">
+            <h3>Direct Messages</h3>
+            <i class="fa fa-plus"></i>
+          </div>
+          <div class="each-channel">
+            <i class="fas fa-circle fa-xs channel-right-margin icon-green"></i>
+            <p>Matz</p>
+          </div>
+          <div class="each-channel">
+            <i class="fas fa-circle fa-xs channel-right-margin icon-green"></i>
+            <p>ATuring</p>
+          </div>
+          <div class="each-channel">
+            <i class="fas fa-circle fa-xs channel-right-margin icon-grey"></i>
+            <p>SteveWozniak</p>
+          </div>
+          <div class="each-channel">
+            <i class="fas fa-circle fa-xs channel-right-margin icon-grey"></i>
+            <p>Zuckerberg</p>
+          </div>
+        </div>
+      </div>
+      <div class="chat">
+        <i class="fas fa-moon moon-icon fa-2x"></i>
+        <div class="border-underline">
+          <div class="chat-header">
+            <h1><i class="fab fa-slack-hash"></i> design</h1>
+          </div>
+        </div>
+        <div class="messages">
+          <div class="message">
+            <img class="avatar" src="./images/user1.jpg" alt="user-img">
+            <div class="message-content">
+              <p><strong>henry-marvel</strong></p>
+              <p>Hey everyone 👋 We’ve just launched a new Le Wagon UI Kit 🚀 👉 <a href="https://uikit.lewagon.com/">
+                  right here</a></p>
+            </div>
+          </div>
+          <div class="message">
+            <img class="avatar" src="./images/user2.jpeg" alt="user-img">
+            <div class="message-content">
+              <p><strong>markstrong</strong></p>
+              <p>yay! 🤘</p>
+            </div>
+          </div>
+          <div class="message">
+            <img class="avatar" src="./images/user3.jpeg" alt="user-img">
+            <div class="message-content">
+              <p><strong>wilkinsonkylie</strong></p>
+              <p>hat looks great, why don't you add a <span style="color: rgb(255, 110, 134)">.card</span> like on
+                dribbble with a cool hover effect? 😎</p>
+            </div>
+          </div>
+          <div class="message">
+            <img class="avatar" src="./images/user4.jpeg" alt="user-img">
+            <div class="message-content">
+              <p><strong>meg-koz34</strong></p>
+              <p>Does it work on Linux? 🤓</p>
+            </div>
+          </div>
+          <div class="message">
+            <img class="avatar" src="./images/user5.jpeg" alt="user-img">
+            <div class="message-content">
+              <p><strong>borismu1</strong></p>
+              <p>Hi designers! A little tutorial I’ve made (french only, 🇬🇧 version coming soon!!!) covering:</p>
+              <p>- UX data (GA, Hotjar) and how to use it to re-think your sitemap</p>
+              <p>- Advanced UX workflow (Sketch > Invision > Abstract)</p>
+              <p>👉 <a href="https://kitt.lewagon.com/knowledge/tutorials/ux_advanced"> check it out!</a></p>
+              <p>Hope you’ll enjoy 📺 !</p>
+            </div>
+          </div>
+          <div class="message">
+            <img class="avatar" src="./images/me.jpg" alt="user-img">
+            <div class="message-content">
+              <p><strong>rober2ds</strong></p>
+              <p>I am an awesome designer! 🤓</p>
+            </div>
+          </div>
+        </div>
+        <input type="text" class="send-a-message w-100" placeholder="Type a message...">
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Including Bootstrap JS (with its Popper.js / jQuery dependency) so that dynamic components work -->
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

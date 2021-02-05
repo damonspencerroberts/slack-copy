@@ -1,0 +1,105 @@
+.sidebar {
+  background-color: #261d25;
+  padding: 16px;
+}
+
+.sidebar-users {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #514951;
+  margin-bottom: 20px;
+  transition: color 1s;
+  cursor: pointer;
+}
+
+.sidebar-users:hover {
+  color: white;
+}
+
+.sidebar-users h2 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.sidebar-users-active {
+  background-color: #514951;
+  color: white;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.channels {
+  background-color: #4b3949;
+  padding: 16px 12px; 
+  width: 280px;
+  color: white;
+}
+
+.main-channel {
+  padding-bottom: 20px;
+}
+
+.main-channel h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.main-channel p {
+  font-size: 1rem;
+  opacity: 0.6;
+}
+
+.main-channel i {
+  margin-right: 5px;
+}
+
+.other-channels {
+  padding-bottom: 20px;
+}
+.other-channels * {
+  margin: 2px;
+}
+
+.other-channels-top {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.other-channels-top h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.each-channel {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  opacity: 0.6;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+
+.active-channel {
+  opacity: 1 !important;
+  font-weight: 700;
+}
+
+.each-channel:hover {
+  opacity: 1;
+  font-weight: 700;
+}
+
+.channel-right-margin {
+  margin-right: 5px;
+}
+
+.icon-green {
+  color: rgb(124, 206, 124);
+}
+
+.icon-grey {
+  color: white !important;
+  opacity: 0.6 !important;
+}
